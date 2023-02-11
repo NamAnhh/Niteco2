@@ -13,7 +13,7 @@ window.addEventListener("DOMContentLoaded", (evt) => {
       const data = await response.json();
 
       if (!value || value.trim() === "") {
-        return null;
+        return (resultElement.innerHTML = null);
       }
 
       const results = data.filter((item) =>
